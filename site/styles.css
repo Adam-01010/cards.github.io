@@ -82,84 +82,104 @@ input[type=text],select,textarea{width:100%;padding:10px;border-radius:8px;borde
 .main{
     flex:1;
     background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border-radius:12px;padding:18px
+    border-radius:12px;
+    padding:18px
 }
 .row{
     display:flex;
+    flex-direction: column;
     gap:12px
 }
+
 .card{
     background:var(--card);
     padding:12px;
     border-radius:10px
 }
+
 .controls{
     display:flex;
     gap:8px;
     flex-wrap:wrap
 }
+
 button{
     background:var(--accent);
     border:none;
     padding:8px 12px;
     border-radius:8px;
-    color:white;cursor:pointer}
+    color:white;
+    cursor:pointer
+}
+
 button.ghost{
     background:transparent;
-    border:1px solid rgba(255,255,255,0.04)
+    border:1px ridge rgba(255,255,255,0.04)
 }
 .cards-list{
     margin-top:12px;
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-    gap:12px}
+    gap:12px
+}
+
 .card-item{
     background:rgba(255,255,255,0.02);
     padding:10px;
     border-radius:8px;
     min-height:80px
 }
+
 .small{
     font-size:13px
 }
+
 .topbar{
     display:flex;
     justify-content:space-between;
     align-items:center;margin-bottom:12px
 }
+
 .hint{
     color:var(--muted);
     font-size:13px
 }
+
 .flex{
     display:flex;
     gap:8px;
     align-items:center
 }
+
 .tag{
     padding:4px 8px;
     border-radius:999px;
     background:rgba(255,255,255,0.03);
     font-size:13px
 }
+
 .danger{
     background:#b91c1c
 }
+
 footer{
     color:var(--muted);
     font-size:13px;
     margin-top:12px
 }
+
 .empty{
     color:var(--muted);
     padding:20px;
     border-radius:8px;
     background:rgba(255,255,255,0.01)
 }
+
 .inline-input{
     display:flex;
     gap:8px
 }
+
 a.link{
     color:var(--accent);
     text-decoration:none

@@ -41,6 +41,9 @@
 
     <main class="main">
       <div class="topbar">
+        <!--Выберите колоду или создайте новую
+          Скопировать ссылку
+          Удалить-->
         <div>
           <h2 id="deckTitle">Выберите колоду или создайте новую</h2>
           <div class="muted" id="deckInfo">—</div>
@@ -59,25 +62,36 @@
             <input id="titleInput" type="text" />
             <label class="small">Описание</label>
             <textarea id="descInput" rows="3"></textarea>
-
+            
+            <!--Приватная
+          Публичная
+          Доступ по ссылке-->
             <div style="margin-top:8px" class="inline-input">
               <select id="visibilitySelect">
-                <option value="private">Приватная</option>
-                <option value="public">Публичная</option>
-                <option value="link">Доступ по ссылке</option>
+                <option value="private" style="background-color: black;">Приватная</option>
+                <option value="public" style="background-color: black;">Публичная</option>
+                <option value="link" style="background-color: black;">Доступ по ссылке</option>
               </select>
               <input id="tagsInput" placeholder="Теги через запятую" />
               <button id="saveDeckBtn">Сохранить</button>
             </div>
 
           </div>
+
+          <!--Добавить
+          Добавить пример
+          Очистить карточки-->
           <div style="width:360px">
             <div class="card">
               <h3>Добавить карточку</h3>
-              <input id="termInput" placeholder="Слово / термин" />
+              <input id="termInput" style="font-size: 14px;margin-bottom: 10px; width:200px; height: 32px;" placeholder="Слово / термин" />
               <textarea id="answerInput" rows="3" placeholder="Перевод / определение"></textarea>
+              <div id="exaplesGrid" class="examples-list">
+                
+              </div>
               <div class="inline-input" style="margin-top:8px">
                 <button id="addCardBtn">Добавить</button>
+                <button id="addExampleInCard" class="ghost">Добавить пример</button>
                 <button id="clearCardsBtn" class="ghost">Очистить карточки</button>
               </div>
             </div>
