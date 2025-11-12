@@ -94,7 +94,7 @@ async def command_google_handler(message: Message) -> None:
             [
                 InlineKeyboardButton( 
                     text='Open',
-                    web_app=WebAppInfo(url='https://adam-01010.github.io/cards.github.io/'),
+                    web_app=WebAppInfo(url='../site/index.html'),
                 )
             ]
         ]

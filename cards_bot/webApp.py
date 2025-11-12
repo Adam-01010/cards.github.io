@@ -33,7 +33,7 @@ async def command_google_handler(message: Message) -> None:
             [
                 InlineKeyboardButton( 
                     text='Open',
-                    web_app=WebAppInfo(url='https://adam-01010.github.io/webApp.github.io/'),
+                    web_app=WebAppInfo(url='file:///C:/Users/Shadow/Desktop/AiogramProjects/WebApp/webApp.github.io/site/webApp.html'),
                 )
             ]
         ]
